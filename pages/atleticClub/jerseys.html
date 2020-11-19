@@ -39,12 +39,12 @@
     <section>
         <article>
             <div class="jerseys">
-                <button class="next" onclick="plusDivs(-1)">&#9651;</button>
+                <button class="next" onclick="nextPictureFirstKit(-1)">&#9651;</button>
 
-                <img class="mySlides" src="../../images/jerseys/athleticClub/first/AthleticClub1.jpg" alt="AthleticClub1.jpg">
-                <img class="mySlides" src="../../images/jerseys/athleticClub/first/AthleticClub2.jpg" alt="AthleticClub1.jpg">
+                <img class="firstKit" src="../../images/jerseys/athleticClub/first/AthleticClub1.jpg" alt="AthleticClub1.jpg">
+                <img class="firstKit" src="../../images/jerseys/athleticClub/first/AthleticClub2.jpg" alt="AthleticClub1.jpg">
                 
-                <button class="previous" onclick="plusDivs(1)">&#9661;</button>
+                <button class="previous" onclick="nextPictureFirstKit(1)">&#9661;</button>
                 
                 <script src="../../scripts/jerseys.js"></script>
             </div>
@@ -71,25 +71,25 @@
                         <option disabled>THE SANTANDER LEAGUE + EUROPE</option>
                     </select><br>
                 <label>NAME / NUMBER</label>
-                    <input type="text" name="name" id="name" minlength="0" maxlength="10" placeholder="PLAYER NAME">
-                    <input type="number" name="number" id="number" min="0" max="99" placeholder="PLAYER NUMBER"><br>
+                    <input type="text" name="name" id="name" minlength="0" maxlength="10" placeholder="PLAYER NAME" autocomplete="off">
+                    <input type="number" name="number" id="number" min="0" max="99" placeholder="PLAYER NUMBER" autocomplete="off"><br>
                 <label>QUANTITY</label>
                     <button id="subtract">-</button>
-                    <input type="number" id="quantity" name="quantity" min="1" max="99" placeholder="1" required>
+                    <input type="number" id="quantity" name="quantity" min="1" max="99" placeholder="1" required autocomplete="off">
                     <button id="add">+</button>
             </div>
         </article>
 
         <article>
             <div class="jerseys">
-                <button class="next" onclick="previous(-1)">&#9651;</button>
+                <button class="next" onclick="nextPictureSecondKit(-1)">&#9651;</button>
 
-                <img class="mySlides" src="../../images/jerseys/athleticClub/second/AthleticClub1.jpg" alt="AthleticClub1.jpg">
-                <img class="mySlides" src="../../images/jerseys/athleticClub/second/AthleticClub2.jpg" alt="AthleticClub1.jpg">
+                <img class="secondKit" src="../../images/jerseys/athleticClub/second/AthleticClub1.jpg" alt="AthleticClub1.jpg">
+                <img class="secondKit" src="../../images/jerseys/athleticClub/second/AthleticClub2.jpg" alt="AthleticClub1.jpg">
                 
-                <button class="previous" onclick="previous(1)">&#9661;</button>
+                <button class="previous" onclick="nextPictureSecondKit(1)">&#9661;</button>
                 
-                <script src="../../scripts/jerseysSecond.js"></script>
+                <script src="../../scripts/jerseys.js"></script>
             </div>
             <div class="shoppingCart">
                 <a href=""><div class="addToCart">ADD TO CART</div></a>
@@ -114,11 +114,11 @@
                         <option disabled>THE SANTANDER LEAGUE + EUROPE</option>
                     </select><br>
                 <label>NAME / NUMBER</label>
-                    <input type="text" name="name" id="name" minlength="0" maxlength="10" placeholder="PLAYER NAME">
-                    <input type="number" name="number" id="number" min="0" max="99" placeholder="PLAYER NUMBER"><br>
+                    <input type="text" name="name" id="name" minlength="0" maxlength="10" placeholder="PLAYER NAME" autocomplete="off">
+                    <input type="number" name="number" id="number" min="0" max="99" placeholder="PLAYER NUMBER" autocomplete="off"><br>
                 <label>QUANTITY</label>
                     <button id="subtract">-</button>
-                    <input type="number" id="quantity" name="quantity" min="1" max="99" placeholder="1" required>
+                    <input type="number" id="quantity" name="quantity" min="1" max="99" placeholder="1" required autocomplete="off">
                     <button id="add">+</button>
             </div>
         </article>
