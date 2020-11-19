@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../../styles/jerseys.css">
+    <link rel="shortcut icon" href="../../../images/basics/favicon.ico" type="image/x-icon">
+    <title>Changing Room</title>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <a href="../../login.html"><img src="../../../images/basics/iconUser.png" alt="iconUser.png"></a>
+            <h6 id="nameUser"><a href="../../login.html">NAMEUSER</a></h6>
+        </hgroup>
+    </header>
+
+    <nav>
+        <img src="../../../images/basics/logo.png" alt="logo.png">
+
+        <ul>
+            <li><a href="../../../index.html">HOME</a></li>
+            <li><a href="">JERSEYS</a></li>
+            <li><a href="">SHORTS</a></li>
+            <li><a href="">WINDBREAKER</a></li>
+            <li><a href="">RETRO</a></li>
+        </ul>
+
+        <div class="shopping">
+            <h4 id="quantity">0</h4>
+            <img src="../../../images/basics/shoppingCart.png" alt="shoppingCart.png">
+        </div>
+    </nav>
+
+    <aside>
+
+    </aside>
+
+    <section>
+        <article>
+            <div class="jerseys">
+                <button class="next" onclick="nextPictureFirstKit(-1)">&#9651;</button>
+
+                <img class="firstKit" src="../../../images/jerseys/SevillaFC/FirstKit/SevillaFC1.jpg" alt="SevillaFC1.jpg">
+                <img class="firstKit" src="../../../images/jerseys/SevillaFC/FirstKit/SevillaFC2.jpg" alt="SevillaFC2.jpg">
+                
+                <button class="previous" onclick="nextPictureFirstKit(1)">&#9661;</button>
+                
+                <script src="../../../scripts/jerseys.js"></script>
+            </div>
+            <div class="shoppingCart">
+                <a href=""><div class="addToCart">ADD TO CART</div></a>
+                <a href=""><div class="buyNow">BUY NOW</div></a>
+            </div>
+            <div class="information">
+                <h3>SEVILLA FC, FIRST EQUIPMENT 20/21</h3>
+                <h1>19.99€</h1><br><br>
+
+                <label>SIZE</label>
+                    <select name="size" id="size" required>
+                        <option>SIZE S</option>
+                        <option selected="selected">SIZE M</option>
+                        <option>SIZE L</option>
+                        <option>SIZE XL</option>
+                        <option>SIZE XXL</option>
+                    </select><br>
+                <label>BADGE</label>
+                    <select name="badge" id="badge" required>
+                        <option>NONE</option>
+                        <option>THE SANTANDER LEAGUE</option>
+                        <option selected="selected">THE SANTANDER LEAGUE + EUROPE</option>
+                    </select><br>
+                <label>NAME / NUMBER</label>
+                    <input type="text" name="name" id="name" minlength="0" maxlength="10" placeholder="PLAYER NAME" autocomplete="off">
+                    <input type="number" name="number" id="number" min="0" max="99" placeholder="PLAYER NUMBER" autocomplete="off"><br>
+                <label>QUANTITY</label>
+                    <button id="subtract">-</button>
+                    <input type="number" id="quantity" name="quantity" min="1" max="99" placeholder="1" required autocomplete="off">
+                    <button id="add">+</button>
+            </div>
+        </article>
+
+        <article>
+            <div class="jerseys">
+                <button class="next" onclick="nextPictureSecondKit(-1)">&#9651;</button>
+
+                <img class="secondKit" src="../../../images/jerseys/SevillaFC/SecondKit/SevillaFC1.jpg" alt="SevillaFC1.jpg">
+                <img class="secondKit" src="../../../images/jerseys/SevillaFC/SecondKit/SevillaFC2.jpg" alt="SevillaFC2.jpg">
+                
+                <button class="previous" onclick="nextPictureSecondKit(1)">&#9661;</button>
+                
+                <script src="../../../scripts/jerseys.js"></script>
+            </div>
+            <div class="shoppingCart">
+                <a href=""><div class="addToCart">ADD TO CART</div></a>
+                <a href=""><div class="buyNow">BUY NOW</div></a>
+            </div>
+            <div class="information">
+                <h3>SEVILLA FC, SECOND EQUIPMENT 20/21</h3>
+                <h1>19.99€</h1><br><br>
+
+                <label>SIZE</label>
+                    <select name="size" id="size" required>
+                        <option>SIZE S</option>
+                        <option selected="selected">SIZE M</option>
+                        <option>SIZE L</option>
+                        <option>SIZE XL</option>
+                        <option>SIZE XXL</option>
+                    </select><br>
+                <label>BADGE</label>
+                    <select name="badge" id="badge" required>
+                        <option>NONE</option>
+                        <option>THE SANTANDER LEAGUE</option>
+                        <option selected="selected">THE SANTANDER LEAGUE + EUROPE</option>
+                    </select><br>
+                <label>NAME / NUMBER</label>
+                    <input type="text" name="name" id="name" minlength="0" maxlength="10" placeholder="PLAYER NAME" autocomplete="off">
+                    <input type="number" name="number" id="number" min="0" max="99" placeholder="PLAYER NUMBER" autocomplete="off"><br>
+                <label>QUANTITY</label>
+                    <button id="subtract">-</button>
+                    <input type="number" id="quantity" name="quantity" min="1" max="99" placeholder="1" required autocomplete="off">
+                    <button id="add">+</button>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <img src="../../../images/basics/logoFooter.png" alt="logo.png"><br>
+        <ul>
+            <li>
+                <a href="" target="_blank">
+                    <img onmouseout="this.src='../../../images/socialNetworks/twitter.png';" onmouseover="this.src='../../../images/socialNetworks/twitterHover.png';"
+                        src="../../../images/socialNetworks/twitter.png" alt="twitter.png" width="35" />
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <img onmouseout="this.src='../../../images/socialNetworks/instagram.png';" onmouseover="this.src='../../../images/socialNetworks/instagramHover.png';"
+                        src="../../../images/socialNetworks/instagram.png" alt="instagram.png" width="35" />
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <img onmouseout="this.src='../../../images/socialNetworks/facebook.png';" onmouseover="this.src='../../../images/socialNetworks/facebookHover.png';"
+                        src="../../../images/socialNetworks/facebook.png" alt="facebook.png" width="35" />
+                </a></li>
+        </ul>
+        <p>Todos los derechos reservados &copy;</p>
+    </footer>
+</body>
+</html>
