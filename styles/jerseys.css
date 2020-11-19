@@ -91,44 +91,195 @@ div.shopping img{
 
 section article{
     margin: auto;
-    width: 100em;
-    height: 30em;
+    width: 76em;
+    height: 20em;
     position: static;
     margin-top: 5em;
 }
 
-section article div#image{
-    width: 16em;
+section article div.jerseys{
     height: 20em;
-    background-image: url(../../images/jerseys/athleticClub/1.jpeg);
-    background-size: 19em;
-    background-repeat: no-repeat;
     float: left;
-    border: 0.1em solid #072432;
+    text-align: center;
 }
 
-section article div#jerseys{
-    width: 82.5em;
-    height: 20em;
-    background-color: blue;
-    float: left;
-    margin-left: 1em;
+section article div.jerseys img{
+    width: 14em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    display: block;
 }
 
+section article div.jerseys button.next{
+    outline: 0;
+    background-color: #E8EDF070;
+    color: rgb(7, 36, 50);
+    border: 0;
+    width: 18em;
+    padding: 0.3em;
+}
 
+section article div.jerseys button.previous{
+    outline: 0;
+    background-color: #E8EDF070;
+    color: rgb(7, 36, 50);
+    border: 0;
+    width: 18em;
+    padding: 0.3em;
+}
 
+section article div.information{
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+    width: 42em;
+    height: 18.5em;
+    float: right;
+}
 
+section article div.information h3{
+    font-family: "Trebuchet MS";
+    color: #072432;
+    font-size: 1.5em;
+}
 
+section article div.information h1{
+    font-family: "Trebuchet MS";
+    color: #072432;
+    font-size: 3em;
+}
 
+section article div.information label{
+    font-family: "Trebuchet MS";
+    color: #072432;
+    font-size: 1em;
+}
 
+section article div.information select#size{
+    outline: 0;
+    border: 0.01em solid #0724322b;
+    color: #072432;
+    font-family: "Trebuchet MS";
+    background-color: transparent;
+    margin-left: 9.3em;
+    padding-left: 0.5em;
+    padding: 0.3em;
+    padding-right: 4em;
+    margin-bottom: 1em;
+}
 
+section article div.information select#badge{
+    outline: 0;
+    border: 0.01em solid #0724322b;
+    color: #072432;
+    font-family: "Trebuchet MS";
+    background-color: transparent;
+    margin-left: 8em;
+    padding-left: 0.5em;
+    padding: 0.3em;
+    padding-right: 4em;
+    margin-bottom: 1em;
+}
 
+section article div.information #name{
+    text-align: center;
+    outline: 0;
+    border: 0.01em solid #0724322b;
+    color: #072432;
+    font-family: "Trebuchet MS";
+    background-color: transparent;
+    margin-left: 2.9em;
+    padding: 0.3em;
+    width: 15em;
+    margin-bottom: 1em;
+}
 
+section article div.information #number{
+    text-align: center;
+    outline: 0;
+    border: 0.01em solid #0724322b;
+    color: #072432;
+    font-family: "Trebuchet MS";
+    background-color: transparent;
+    margin-left: 2em;
+    padding: 0.3em;
+    margin-bottom: 1em;
+    width: 10em;
+}
 
+section article div.information #number::-webkit-inner-spin-button, 
+section article div.information #number::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+  
+section article div.information button#subtract{
+    margin-left: 4.2em;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    color: #072432;
+    font-size: 1em;
+}
 
+section article div.information #quantity{
+    text-align: center;
+    outline: 0;
+    border: 0.01em solid #0724322b;
+    color: #072432;
+    font-family: "Trebuchet MS";
+    background-color: transparent;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding-left: 0.5em;
+    padding: 0.3em;
+    margin-bottom: 1em;
+}
 
+section article div.information #quantity::-webkit-inner-spin-button, 
+section article div.information #quantity::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
 
+section article div.information button#add{
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    color: #072432;
+    font-size: 1em;
+}
 
+section article div.shoppingCart{
+    width: 12em;
+    float: right;
+}
+
+section article div.shoppingCart a{
+    text-decoration: none;
+}
+
+section article div.shoppingCart a div.addToCart{
+    background-color: rgb(232, 237, 240);
+    font-family: "Trebuchet MS";
+    text-align: center;
+    font-size: 1.7em;
+    color: rgb(7, 36, 50);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+    text-decoration: none;
+}
+
+section article div.shoppingCart a div.buyNow{
+    background-color: rgb(7, 36, 50);
+    font-family: "Trebuchet MS";
+    text-align: center;
+    font-size: 1.7em;
+    color: rgb(232, 237, 240);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
 
 footer{
     margin-top: 40px;
@@ -159,9 +310,7 @@ footer ul li a img{
 footer p{
     margin: auto;
     padding-bottom: 20px;
-    color: #ffffff;
+    color: #E8EDF0;
     font-family: Trebuchet MS;
     font-size: 0.7em;
 }
-
-
