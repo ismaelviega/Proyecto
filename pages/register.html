@@ -21,17 +21,20 @@
 
     <section>
         <article>
-            <input type="text" name="user" id="user" required placeholder="User" autocomplete="off"><br>
-            <input type="email" name="email" id="email" required placeholder="Email" autocomplete="off"><br>
-            <input type="password" name="passwordUser" id="passwordUser" required placeholder="Password" autocomplete="off"><br>
-            <input type="password" name="passwordConfirmedUser" id="passwordConfirmedUser" required placeholder="Confirm Password" autocomplete="off"><br>
-            
-            <div>
-                <input type="checkbox" name="sessionOpen" id="">
-                <label>I accept the conditions.</label>
-            </div>
-            
-            <br><input type="submit" id="submit" value="REGISTER">
+            <form id="form">
+                <input type="text" name="user" id="user" required placeholder="User" autocomplete="off" onkeyup="upperCase()"><br>
+                <input type="email" name="email" id="email" required placeholder="Email" autocomplete="off" onkeyup="upperCase()"><br>
+                <input type="password" name="passwordUser" id="passwordUser" required placeholder="Password" autocomplete="off"><br>
+                <input type="password" name="passwordConfirmedUser" id="passwordConfirmedUser" required placeholder="Confirm Password" autocomplete="off"><br>
+                
+                <div>
+                    <input type="checkbox" name="acceptConditions" id="acceptConditions">
+                    <label id="conditions">I accept the conditions.</label>
+                </div>
+                
+                <br><input type="submit" id="submit" value="REGISTER" onclick="register(event)">
+                <script src="../scripts/loginRegister.js"></script>
+            </form>
         </article>
     </section>
 </body>

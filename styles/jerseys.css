@@ -259,7 +259,7 @@ section article div.shoppingCart a{
     text-decoration: none;
 }
 
-section article div.shoppingCart a div.addToCart{
+section article div.shoppingCart a div#addToCart{
     background-color: rgb(232, 237, 240);
     font-family: "Trebuchet MS";
     text-align: center;
@@ -271,7 +271,7 @@ section article div.shoppingCart a div.addToCart{
     text-decoration: none;
 }
 
-section article div.shoppingCart a div.buyNow{
+section article div.shoppingCart a div#buyNow{
     background-color: rgb(7, 36, 50);
     font-family: "Trebuchet MS";
     text-align: center;
