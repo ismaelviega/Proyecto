@@ -5,17 +5,22 @@
 
 header{
     height: 3em;
-    margin: 0 auto;
     background-color: #072432;
+    justify-content: center;
+    display: flex;
+}
+
+header img{
+    float: right;
+    width: 2.5em;
+    margin-top: 0.2em;
 }
 
 header hgroup h6{
-    float: right;
-    text-align: right;
     font-family: 'Trebuchet MS';
-    font-size: 1em;
-    margin-top: 0.8em;
-    margin-right: 0.5em;
+    font-size: 1.1em;
+    margin-top: 0.6em;
+    margin-left: 0.5em;
 }
 
 header hgroup h6 a{
@@ -23,41 +28,33 @@ header hgroup h6 a{
     text-decoration: none;
 }
 
-header hgroup img{
-    float: right;
-    width: 2.5em;
-    margin-top: 0.2em;
-    margin-right: 10em;
-}
-
 nav{
-    height: 12em;
     background-color: #E8EDF0;
-    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 nav img{
     float: left;
     width: 10em;
-    margin-left: 10em;
-    margin-top: 1.8em;
+    margin-left: 7em;
 }
 
 nav ul{
+    margin-top: 3.2em;
     float: left;
 }
 
 nav ul li{
-    display: inline-block;
-    margin-top: 5.2em;
-
+    display: inline-table;
 }
 
 nav ul li a{
     color: #072432;
     font-family: 'Trebuchet MS';
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-left: 3em;
 }
 
@@ -67,12 +64,17 @@ nav ul li a:hover{
 }
 
 div.shopping{
-    border: 0.15em solid #072432;
+    border: 0.13em solid #E8EDF0;
     float: right;
-    padding-left: 2em;
-    padding-right: 2em;
-    margin-top: 4.5em;
-    margin-right: 10em;
+    margin-top: 2.5em;
+    margin-right: 7em;
+    margin-left: 3.5em;
+    padding-left: 0.7em;
+    padding-right: 1em;
+}
+
+div.shopping:hover{
+    border: 0.13em solid #072432;
 }
 
 div.shopping h4{
@@ -84,31 +86,59 @@ div.shopping h4{
 
 div.shopping img{
     width: 2em;
-    margin: 0;
     margin-left: 1em;
     margin-top: 0.5em;
 }
 
+aside{
+    background-color: #072432;
+    font-family: 'Trebuchet MS';
+    justify-content: center;
+    color: #E8EDF0;
+    display: flex;
+    height: 4em;
+}
+
+aside p{
+    padding-top: 1.8em;
+}
+
+aside h1{
+    padding-top: 0.2em;
+    padding-left: 0.3em;
+    font-size: 2.5em;
+}
+
+aside img{
+    padding-left: 1em;
+    padding-top: 0.9em;
+    width: 3em;
+    height: 2em;
+}
+
+section{
+    margin-top: 3em;
+}
+
 section article{
-    margin-bottom: 5em;
+    margin-bottom: 3em;
 }
 
 section article table{
     margin: 0 auto;
-    
 }
 
 section article table tr td a img{
     background-color: #072432;
-    height: 21.4em;
+    height: 20em;
+    margin-left: 3em;
 }
 
 footer{
-    margin-top: 40px;
     background-color: #072432;
-    margin-top: 30px;
+    margin-top: 2em;
     text-align: center;
-    padding: 10px;
+    padding-bottom: 1.5em;
 }
 
 footer img{
@@ -122,19 +152,17 @@ footer ul{
 footer ul li{
     list-style: none;
     float: left;
-    padding: 5px;
 }
 
 footer ul li a img{
-    width: 2em;
+    width: 2.3em;
+    padding: 0.4em;
 }
 
 footer p{
-    margin: auto;
-    padding-bottom: 20px;
     color: #ffffff;
     font-family: Trebuchet MS;
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
 
 
