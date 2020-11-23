@@ -4,8 +4,9 @@ function login(event){
 
     if (validateUser() == true && validatePassword() == true){
             var fFormulario = document.forms["form"];
-            fFormulario.action = "../pages/teams/AthleticClub/jerseys.html";
+            fFormulario.action = "../index.html";
             fFormulario.submit();
+            
     } else {
         event.preventDefault();
     }
@@ -21,7 +22,8 @@ function register(event){
     if (validateUser() == true && validateEmail() == true && validatePassword() == true &&
         confirmedPassword() == true && acceptConditions() == true){
             var fFormulario = document.forms["form"];
-            fFormulario.action = "../pages/teams/AthleticClub/jerseys.html";
+            fFormulario.action = "../index.html";
+            alert("Has sido registrado con éxito!")
             fFormulario.submit();
             
     } else {
@@ -119,9 +121,9 @@ function acceptConditions(){
     return bEsCorrecto;
 }
 
-function upperCase(){
-    document.getElementById("user").value = document.getElementById("user").value.toUpperCase();
-    document.getElementById("email").value = document.getElementById("email").value.toUpperCase();
+function userLogin(){
+    var sUser = document.getElementById("user").value;
+    document.getElementById("nameUser").innerHTML = "pepe";
 }
 
 

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../../styles/windbreaker.css">
+    <link rel="shortcut icon" href="../../../images/icons/favicon.ico" type="image/x-icon">
+    <title>Changing Room</title>
+</head>
+<body>
+    <header>
+        <a href="../../../pages/login.html"><img src="../../../images/icons/iconuser.png" alt="iconuser.png"></a>
+        <hgroup>
+            <h6><a href="../../../pages/login.html" id="nameUser"></a></h6>
+        </hgroup>
+    </header>
+
+    <nav>
+        <img src="../../../images/icons/logo.png" alt="logo.png">
+
+        <ul>
+            <li><a href="../../../index.html">HOME</a></li>
+            <li><a href="">JERSEYS</a></li>
+            <li><a href="">SHORTS</a></li>
+            <li><a href="">WINDBREAKER</a></li>
+        </ul>
+
+        <div class="shopping">
+            <h4 id="quantity">0</h4>
+            <img src="../../../images/icons/shoppingcart.png" alt="shoppingCart.png">
+        </div>
+    </nav>
+
+    <aside class="shipping">
+        <p>ENVÍOS</p>
+        <h1>GRATIS !</h1>
+        <img src="../../../images/icons/plane.png" alt="plane.png">
+    </aside>
+
+    <section>
+        <article>
+            <div class="jerseys">
+                <button class="next" onclick="nextPictureFirstKit(-1)">&#9651;</button>
+
+                <img class="firstKit" src="../../../images/teams/deportivoalaves/windbreaker/1.jpg" alt="deportivoalaves.jpg">
+                <img class="firstKit" src="../../../images/teams/deportivoalaves/windbreaker/2.jpg" alt="deportivoalaves.jpg">
+                
+                <button class="previous" onclick="nextPictureFirstKit(1)">&#9661;</button>
+                
+            </div>
+            <div class="shoppingCart">
+                <a href=""><div id="addToCart">ADD TO CART</div></a>
+                <a href=""><div id="buyNow">BUY NOW</div></a>
+            </div>
+            <div class="information">
+                <h3>DEPORTIVO ALAVÉS, FIRST EQUIPMENT 20/21</h3>
+                <h1>29.99€</h1><br><br>
+
+                <form id="form">
+                    <label>SIZE</label>
+                        <select name="size" id="size" required>
+                            <option>SIZE S</option>
+                            <option selected="selected">SIZE M</option>
+                            <option>SIZE L</option>
+                            <option>SIZE XL</option>
+                            <option>SIZE XXL</option>
+                        </select><br>
+                    <label>QUANTITY</label>
+                        <button id="subtract">-</button>
+                        <input type="number" id="quantity" name="quantity" value="1" required autocomplete="off" readonly>
+                        <button id="add">+</button>
+                </form>
+            </div>
+        </article>
+
+        <article>
+            <div class="jerseys">
+                <button class="next" onclick="nextPictureSecondKit(-1)">&#9651;</button>
+
+                <img class="secondKit" src="../../../images/teams/deportivoalaves/windbreaker/3.jpg" alt="deportivoalaves.jpg">
+                <img class="secondKit" src="../../../images/teams/deportivoalaves/windbreaker/4.jpg" alt="deportivoalaves.jpg">
+                
+                <button class="previous" onclick="nextPictureSecondKit(1)">&#9661;</button>
+                <script src="../../../scripts/slide.js"></script>
+            </div>
+            <div class="shoppingCart">
+                <a href=""><div id="addToCart">ADD TO CART</div></a>
+                <a href=""><div id="buyNow">BUY NOW</div></a>
+            </div>
+            <div class="information">
+                <h3>DEPORTIVO ALAVÉS, SECOND EQUIPMENT 20/21</h3>
+                <h1>29.99€</h1><br><br>
+
+                <form id="form">
+                    <label>SIZE</label>
+                        <select name="size" id="size" required>
+                            <option>SIZE S</option>
+                            <option selected="selected">SIZE M</option>
+                            <option>SIZE L</option>
+                            <option>SIZE XL</option>
+                            <option>SIZE XXL</option>
+                        </select><br>
+                    <label>QUANTITY</label>
+                        <button id="subtract">-</button>
+                        <input type="number" id="quantity" name="quantity" value="1" required autocomplete="off" readonly>
+                        <button id="add">+</button>
+                </form>
+            </div>
+        </article>
+    </section>
+
+    <aside class="sponsor">
+        <a href="https://www.kelme.com/es/" target="_blank"><img onmouseout="this.src='../../../images/sponsor/kelme.png';"
+            onmouseover="this.src='../../../images/sponsor/kelmehover.png';" src="../../../images/sponsor/kelme.png" id="kelme"
+            alt="kelme.png" /></a>
+    </aside>
+
+    <footer>
+        <img src="../../../images/icons/logofooter.png" alt="logoFooter.png"><br>
+        <ul>
+            <li><a href="https://twitter.com/" target="_blank"><img onmouseout="this.src='../../../images/social/twitter.png';"
+                        onmouseover="this.src='../../../images/social/twitterhover.png';" src="../../../images/social/twitter.png" alt="twitter.png" /></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img
+                        onmouseout="this.src='../../../images/social/instagram.png';"
+                        onmouseover="this.src='../../../images/social/instagramhover.png';" src="../../../images/social/instagram.png" alt="instagram.png" width="35" /></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img
+                        onmouseout="this.src='../../../images/social/facebook.png';"
+                        onmouseover="this.src='../../../images/social/facebookhover.png';" src="../../../images/social/facebook.png" alt="facebook.png" width="35" /></a></li>
+        </ul>
+        <p>Todos los derechos reservados &copy;</p>
+    </footer>
+</body>
+</html>

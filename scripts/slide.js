@@ -1,16 +1,16 @@
 var iIndexFirstKit = 1;
-/* var iIndexSecondKit = 1; */
+var iIndexSecondKit = 1;
 
 showPicturesFirstKit(iIndexFirstKit);
-/* showPicturesSecondKit(iIndexSecondKit); */
+showPicturesSecondKit(iIndexSecondKit);
 
 function nextPictureFirstKit(index) {
     showPicturesFirstKit(iIndexFirstKit += index);
 }
 
-/* function nextPictureSecondKit(index) {
+function nextPictureSecondKit(index) {
     showPicturesSecondKit(iIndexSecondKit += index);
-} */
+}
 
 function showPicturesFirstKit(index) {
     var iFirstKit = document.getElementsByClassName("firstKit");
