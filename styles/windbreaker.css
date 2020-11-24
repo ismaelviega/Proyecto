@@ -280,11 +280,13 @@ section article div.information button#add{
 section article div.shoppingCart{
     width: 12em;
     float: right;
+    padding-top: 2.5em;
 }
 
 section article div.shoppingCart a{
     text-decoration: none;
 }
+
 
 section article div.shoppingCart a div#addToCart{
     background-color: rgb(232, 237, 240);
@@ -296,6 +298,12 @@ section article div.shoppingCart a div#addToCart{
     padding-bottom: 2em;
     position: relative;
     text-decoration: none;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+section article div.shoppingCart a div#addToCart:hover{
+    opacity: 1;
 }
 
 section article div.shoppingCart a div#buyNow{
@@ -307,7 +315,14 @@ section article div.shoppingCart a div#buyNow{
     padding-top: 2em;
     padding-bottom: 2em;
     position: relative;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out 0s;
 }
+
+section article div.shoppingCart a div#buyNow:hover{
+    opacity: 1;
+}
+
 
 aside.sponsor{
     background-color: #E8EDF0;
@@ -319,45 +334,99 @@ aside.sponsor{
 
 aside.sponsor a img#adidas{
     width: 4.3em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+aside.sponsor a img#adidas:hover{
+    opacity: 1;
 }
 
 aside.sponsor a img#hummel{
     width: 5em;
     padding-top: 0.8em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+aside.sponsor a img#hummel:hover{
+    opacity: 1;
 }
 
 aside.sponsor a img#joma{
     width: 5em;
     padding-top: 0.5em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+aside.sponsor a img#joma:hover{
+    opacity: 1;
 }
 
 aside.sponsor a img#kappa{
     width: 6em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+aside.sponsor a img#kappa:hover{
+    opacity: 1;
 }
 
 aside.sponsor a img#kelme{
     width: 3em;
     padding-top: 0.1em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+aside.sponsor a img#kelme:hover{
+    opacity: 1;
 }
 
 aside.sponsor a img#macron{
     width: 2.2em;
     padding-top: 0.3em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+aside.sponsor a img#macron:hover{
+    opacity: 1;
 }
 
 aside.sponsor a img#newbalance{
     width: 4.5em;
     padding-top: 0.3em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+aside.sponsor a img#newbalance:hover{
+    opacity: 1;
 }
 
 aside.sponsor a img#nike{
     width: 5em;
     padding-top: 0.6em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+aside.sponsor a img#nike:hover{
+    opacity: 1;
 }
 
 aside.sponsor a img#puma{
     width: 3.5em;
     padding-top: 0.2em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+aside.sponsor a img#puma:hover{
+    opacity: 1;
 }
 
 footer{
