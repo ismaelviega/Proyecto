@@ -44,29 +44,28 @@
         <article class="shoppingCart">
                 <div>
                     <h1>MY SHOPPING CART</h1>
-                    <img onmouseout="this.src='../images/icons/recycle.png';" onmouseover="this.src='../images/icons/recyclehover.png';"
-                        src="../images/icons/recycle.png" alt="recycle.png" />
+                    <a href="" id="href">
+                        <img onmouseout="this.src='../images/icons/recycle.png';" onmouseover="this.src='../images/icons/recyclehover.png';"
+                            src="../images/icons/recycle.png" id="recycle"  alt="recycle.png" />
+                    </a>
+                    <script src="../scripts/removeProduct.js"></script>
                 </div>
-                
+
                 <table>
-                    <tr>
-                        <th>GOODS</th>
-                        <th>PRICE</th>
-                        <th>QUANTITY</th>
-                        <th>SIZE</th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td><img src="../images/teams/atleticomadrid/jerseys/1.jpg" id="product" alt="atleticomadrid.jpg"></td>
-                        <td><h1>19.99€</h1></td>
-                        <td>
-                            <input type="button" id="subtract" value="-"/>
-                            <input type="number" id="quantity" name="quantity" value="1" required autocomplete="off" readonly>
-                            <input type="button" id="add" value="+"/>
-                        </td>
-                        <td><h1>M</h1></td>
-                        <td colspan="4"><img src="../images/icons/cancel.png" id="cancel" alt="cancel.png"></td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>GOODS</th>
+                            <th>PRICE</th>
+                            <th>QUANTITY</th>
+                            <th>NAME</th>
+                            <th>NUMBER</th>
+                            <th>SIZE</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="product">
+                        <script src="../scripts/shoppingcart.js"></script>
+                    </tbody>
                 </table>
             </div>       
         </article>
@@ -76,27 +75,37 @@
                 <h1>PAY</h1>
             </div>
 
-            <input type="text" id="promotionalCode" placeholder="Promotional Code"/>
-            <input type="submit" id="submit" value="+"/>
+            <form>
+                <input type="text" id="promotionalCode" placeholder="Promotional Code"/>
+                <input type="submit" id="submit" value="+"/>
+            </form>
 
+            <div id="textBox">
+                <p id="message"></p>
+            </div>
+            
             <hr>
 
             <table>
                 <tr>
                     <th>PRODUCT PRICE</th>
-                    <td>19.99€</td>
+                    <td id="productPrice">0€</td>
                 </tr>
                 <tr>
                     <th>PROMOTION DISCOUNT</th>
-                    <td>0€</td>
+                    <td id="promotionDiscount">0€</td>
+                    <script src="../scripts/validatePromoCode.js"></script>
                 </tr>
                 <tr>
                     <th>TOTAL PRICE</th>
-                    <td>19.99€</td>
+                    <td id="totalPrice">0€</td>
                 </tr>
             </table>
-
-            <input type="submit" id="pay" value="CONTINUE"/>
+            <script src="../scripts/productprice.js"></script>  
+            <a href="" id="hrefPay">
+                <input type="submit" id="payProduct" value="CONTINUE"/>
+            </a>
+            <script src="../scripts/checkSession.js"></script>
         </article>
     </section>
 

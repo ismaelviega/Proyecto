@@ -1,16 +1,4 @@
-function login(event){
-    validatePassword();
-    validateUser();
-
-    if (validateUser() == true && validatePassword() == true){
-            var fFormulario = document.forms["form"];
-            fFormulario.action = "../index.html";
-            fFormulario.submit();
-            
-    } else {
-        event.preventDefault();
-    }
-}
+document.getElementById("submit").addEventListener('click', register, false);
 
 function register(event){
     acceptConditions();
@@ -21,11 +9,14 @@ function register(event){
 
     if (validateUser() == true && validateEmail() == true && validatePassword() == true &&
         confirmedPassword() == true && acceptConditions() == true){
+            var user = {"User" : JSON.parse(localStorage.getItem("nameUser")), "Password" : JSON.parse(localStorage.getItem("passwordUser"))};
+            sessionStorage.setItem("user" + sessionStorage.length , JSON.stringify(user));
+            
             var fFormulario = document.forms["form"];
             fFormulario.action = "../index.html";
-            alert("Has sido registrado con éxito!")
+            alert("Has sido registrado con éxito!");
+
             fFormulario.submit();
-            
     } else {
         event.preventDefault();
     }
@@ -39,11 +30,21 @@ function validateUser(){
         document.getElementById("user").style.border = "0.05em solid #ff000093";
         document.getElementById("user").focus();
     } else {
-        document.getElementById("user").style.border = "0.05em solid #07243293";
-        bEsCorrecto = true;
+        for (var i = 0; i < sessionStorage.length; i++){
+            key = sessionStorage.key(i);
+            if (key.includes("user")){
+                if (JSON.parse(sessionStorage.getItem(key)).User == sUser){
+                    document.getElementById("user").style.border = "0.05em solid #ff000093";
+                    document.getElementById("user").focus();
+                } else {
+                    document.getElementById("user").style.border = "0.05em solid #07243293";
+                    localStorage.setItem("nameUser", JSON.stringify(sUser));
+                    bEsCorrecto = true;
+                }
+            }
+        }  
     }
 
-    
     return bEsCorrecto;
 }
 
@@ -101,6 +102,7 @@ function confirmedPassword(){
     } else {
         document.getElementById("passwordConfirmedUser").style.border = "0.05em solid #07243293";
         document.getElementById("passwordUser").style.border = "0.05em solid #07243293";
+        localStorage.setItem("passwordUser", JSON.stringify(sPassword));
         bEsCorrecto = true;
     }
 
@@ -119,11 +121,6 @@ function acceptConditions(){
     }
 
     return bEsCorrecto;
-}
-
-function userLogin(){
-    var sUser = document.getElementById("user").value;
-    document.getElementById("nameUser").innerHTML = "pepe";
 }
 
 
