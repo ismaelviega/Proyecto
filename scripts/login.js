@@ -8,9 +8,17 @@ function validate(event){
     validateUser();
 
     if (validateUser() == true && validatePassword() == true){
+        var sPage = localStorage.getItem("parentPage");
+        
+        if (sPage.substring(sPage.length, sPage.lastIndexOf("/") + 1) == "shoppingcart.html"){
+            var fFormulario = document.forms["form"];
+            fFormulario.action = "pinformation.html";
+            fFormulario.submit();
+        } else {
             var fFormulario = document.forms["form"];
             fFormulario.action = "../index.html";
             fFormulario.submit();
+        } 
     } else {
         event.preventDefault();
     }

@@ -8,8 +8,8 @@ for (i = 0; i <= localStorage.length - 1; i++)  {
     } 
 }
 
-document.getElementById("totalPrice").innerHTML = Number(iProductPrice) + "€"
-document.getElementById("productPrice").innerHTML = Number(iProductPrice) + "€";
+document.getElementById("totalPrice").innerHTML = Number(iProductPrice).toFixed(2) + "€"
+document.getElementById("productPrice").innerHTML = Number(iProductPrice).toFixed(2) + "€";
 
 
 

@@ -9,10 +9,11 @@
 </head>
 <body>
     <header>
-        <a href="../../../pages/login.html"><img src="../../../images/icons/iconuser.png" alt="iconuser.png"></a>
+        <a href="../../../pages/login.html" id="hrefUser"><img src="../../../images/icons/iconuser.png" alt="iconuser.png"></a>
         <hgroup>
             <h6><a href="../../../pages/login.html" id="nameUser"></a></h6>
         </hgroup>
+        <script src="scripts/windbreaker/user.js"></script>
     </header>
 
     <nav>
@@ -25,10 +26,14 @@
             <li><a href="">WINDBREAKER</a></li>
         </ul>
 
-        <div class="shopping">
-            <h4 id="quantity">0</h4>
-            <img src="../../../images/icons/shoppingcart.png" alt="shoppingCart.png">
-        </div>
+        <a id="href" href="">
+            <div class="shopping">
+                <h4 id="quantity"></h4>
+                <img src="../../../images/icons/shoppingcart.png" alt="shoppingCart.png">
+            </div>
+        </a>
+        
+        <script src="scripts/windbreaker/cart.js"></script>
     </nav>
 
     <aside class="shipping">
@@ -40,25 +45,27 @@
     <section>
         <article>
             <div class="jerseys">
-                <button class="next" onclick="nextPictureFirstKit(-1)">&#9651;</button>
+                <button id="nextFirstKit" onclick="nextPictureFirstKit(-1)">&#9651;</button>
 
-                <img class="firstKit" src="../../../images/teams/realvalladolid/windbreaker/1.jpg" alt="realvalladolid.jpg">
-                <img class="firstKit" src="../../../images/teams/realvalladolid/windbreaker/2.jpg" alt="realvalladolid.jpg">
+                <img class="firstKit" src="../../../images/teams/realvalladolid/windbreaker/1.jpg" alt="athletic.jpg">
+                <img class="firstKit" src="../../../images/teams/realvalladolid/windbreaker/2.jpg" alt="athletic.jpg">
                 
-                <button class="previous" onclick="nextPictureFirstKit(1)">&#9661;</button>
-                
+                <button id="previousFirstKit" onclick="nextPictureFirstKit(1)">&#9661;</button>
+                <script src="scripts/windbreaker/slide/slideFirstKit.js"></script>
             </div>
             <div class="shoppingCart">
-                <a href=""><div id="addToCart">ADD TO CART</div></a>
-                <a href=""><div id="buyNow">BUY NOW</div></a>
+                <a href=""><div id="addToCartFirstKit" src="../../../images/teams/realvalladolid/windbreaker/1.jpg">ADD TO CART</div></a>
+                <script src="scripts/windbreaker/addToCart/addToCartFirstKit.js"></script>
+                <a href="../../shoppingcart.html"><div id="buyNowFirstKit" src="../../../images/teams/realvalladolid/windbreaker/1.jpg">BUY NOW</div></a>
+                <script src="scripts/windbreaker/buynow/buyNowFirstKit.js"></script>
             </div>
             <div class="information">
                 <h3>REAL VALLADOLID, FIRST EQUIPMENT 20/21</h3>
-                <h1>29.99€</h1><br><br>
+                <h1 id="priceFirstKit">29.99€</h1><br><br>
 
                 <form id="form">
                     <label>SIZE</label>
-                        <select name="size" id="size" required>
+                        <select id="sizeFirstKit" required>
                             <option>SIZE S</option>
                             <option selected="selected">SIZE M</option>
                             <option>SIZE L</option>
@@ -66,34 +73,37 @@
                             <option>SIZE XXL</option>
                         </select><br>
                     <label>QUANTITY</label>
-                        <button id="subtract">-</button>
-                        <input type="number" id="quantity" name="quantity" value="1" required autocomplete="off" readonly>
-                        <button id="add">+</button>
+                        <button id="subtractFirstKit">-</button>
+                        <input type="number" id="quantityFirstKit"  value="1" required autocomplete="off" readonly>
+                        <button id="addFirstKit">+</button>
+                        <script src="scripts/windbreaker/quantity/quantityFirstKit.js"></script>
                 </form>
             </div>
         </article>
 
         <article>
             <div class="jerseys">
-                <button class="next" onclick="nextPictureSecondKit(-1)">&#9651;</button>
+                <button id="nextSecondKit" onclick="nextPictureSecondKit(-1)">&#9651;</button>
 
-                <img class="secondKit" src="../../../images/teams/realvalladolid/windbreaker/3.jpg" alt="realvalladolid.jpg">
-                <img class="secondKit" src="../../../images/teams/realvalladolid/windbreaker/4.jpg" alt="realvalladolid.jpg">
+                <img class="secondKit" src="../../../images/teams/realvalladolid/windbreaker/3.jpg" alt="athletic.jpg">
+                <img class="secondKit" src="../../../images/teams/realvalladolid/windbreaker/4.jpg" alt="athletic.jpg">
                 
-                <button class="previous" onclick="nextPictureSecondKit(1)">&#9661;</button>
-                <script src="../../../scripts/slide.js"></script>
+                <button id="previousSecondKit" onclick="nextPictureSecondKit(1)">&#9661;</button>
+                <script src="scripts/windbreaker/slide/slideSecondKit.js"></script>
             </div>
             <div class="shoppingCart">
-                <a href=""><div id="addToCart">ADD TO CART</div></a>
-                <a href=""><div id="buyNow">BUY NOW</div></a>
+                <a href=""><div id="addToCartSecondKit" src="../../../images/teams/realvalladolid/windbreaker/3.jpg">ADD TO CART</div></a>
+                <script src="scripts/windbreaker/addToCart/addToCartSecondKit.js"></script>
+                <a href="../../shoppingcart.html"><div id="buyNowSecondKit" src="../../../images/teams/realvalladolid/windbreaker/3.jpg">BUY NOW</div></a>
+                <script src="scripts/windbreaker/buynow/buyNowSecondKit.js"></script>
             </div>
             <div class="information">
                 <h3>REAL VALLADOLID, SECOND EQUIPMENT 20/21</h3>
-                <h1>29.99€</h1><br><br>
+                <h1 id="priceSecondKit">29.99€</h1><br><br>
 
                 <form id="form">
                     <label>SIZE</label>
-                        <select name="size" id="size" required>
+                        <select id="sizeSecondKit" required>
                             <option>SIZE S</option>
                             <option selected="selected">SIZE M</option>
                             <option>SIZE L</option>
@@ -101,16 +111,17 @@
                             <option>SIZE XXL</option>
                         </select><br>
                     <label>QUANTITY</label>
-                        <button id="subtract">-</button>
-                        <input type="number" id="quantity" name="quantity" value="1" required autocomplete="off" readonly>
-                        <button id="add">+</button>
+                        <button id="subtractSecondKit">-</button>
+                        <input type="number" id="quantitySecondKit" value="1" required autocomplete="off" readonly>
+                        <button id="addSecondKit">+</button>
+                        <script src="scripts/windbreaker/quantity/quantitySecondKit.js"></script>
                 </form>
             </div>
         </article>
     </section>
 
     <aside class="sponsor">
-        <a href="https://www.adidas.es/" target="_blank"><img src="../../../images/sponsor/adidas.png" id="adidas" alt="adidas.png"/></a>
+        <a href="https://www.newbalance.es/es/home" target="_blank"><img src="../../../images/sponsor/newbalance.png" id="newbalance" alt="newbalance.png"/></a>
     </aside>
 
     <footer>

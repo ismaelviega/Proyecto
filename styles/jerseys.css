@@ -19,7 +19,7 @@ header img{
 header hgroup h6{
     font-family: 'Trebuchet MS';
     font-size: 1.1em;
-    margin-top: 0.6em;
+    margin-top: 0.8em;
     margin-left: 0.5em;
 }
 
@@ -145,6 +145,12 @@ section article div.jerseys button#nextFirstKit{
     border: 0;
     width: 18em;
     padding: 0.3em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+section article div.jerseys button#nextFirstKit:hover{
+    opacity: 1;
 }
 
 section article div.jerseys button#previousFirstKit{
@@ -154,6 +160,12 @@ section article div.jerseys button#previousFirstKit{
     border: 0;
     width: 18em;
     padding: 0.3em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+section article div.jerseys button#previousFirstKit:hover{
+    opacity: 1;
 }
 
 section article div.jerseys button#nextSecondKit{
@@ -163,6 +175,12 @@ section article div.jerseys button#nextSecondKit{
     border: 0;
     width: 18em;
     padding: 0.3em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+section article div.jerseys button#nextSecondKit:hover{
+    opacity: 1;
 }
 
 section article div.jerseys button#previousSecondKit{
@@ -172,6 +190,12 @@ section article div.jerseys button#previousSecondKit{
     border: 0;
     width: 18em;
     padding: 0.3em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+section article div.jerseys button#previousSecondKit:hover{
+    opacity: 1;
 }
 
 section article div.information{

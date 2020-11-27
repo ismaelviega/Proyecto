@@ -24,13 +24,13 @@ function validatePromoCode(event){
             document.getElementById("message").innerHTML = "Congratulations, you have a 15% discount!";
             iDiscount = (iTotalPrice * 15) / 100;
             document.getElementById("promotionDiscount").innerHTML = Number(iDiscount).toFixed(2) + "€";
-            document.getElementById("productPrice").innerHTML = iProductPrice + "€";
+            document.getElementById("productPrice").innerHTML = Number(iProductPrice).toFixed(2) + "€";
             document.getElementById("totalPrice").innerHTML = (Number(iTotalPrice) - Number(iDiscount)).toFixed(2) + "€";
         } else if (sPromotionalCode.toUpperCase() == "BKFRIDAY20"){
             document.getElementById("message").innerHTML = "Congratulations, you have a 10% discount!";
             iDiscount = (iTotalPrice * 10) / 100;
             document.getElementById("promotionDiscount").innerHTML = Number(iDiscount).toFixed(2) + "€";
-            document.getElementById("productPrice").innerHTML = iProductPrice + "€";
+            document.getElementById("productPrice").innerHTML = Number(iProductPrice).toFixed(2) + "€";
             document.getElementById("totalPrice").innerHTML = (Number(iTotalPrice) - Number(iDiscount)).toFixed(2) + "€";
         } else {
             document.getElementById("message").innerHTML = "The promo code is not valid.";

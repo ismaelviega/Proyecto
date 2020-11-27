@@ -19,7 +19,7 @@ header img{
 header hgroup h6{
     font-family: 'Trebuchet MS';
     font-size: 1.1em;
-    margin-top: 0.6em;
+    margin-top: 0.8em;
     margin-left: 0.5em;
 }
 
@@ -309,6 +309,12 @@ section article.shoppingCart input#card{
     opacity: 0.5;
 }
 
+section article.shoppingCart input#card::-webkit-inner-spin-button, 
+section article.shoppingCart input#card::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
 section article.shoppingCart input#month{
     outline: 0;
     border: 0.1em solid #072432;
@@ -339,6 +345,12 @@ section article.shoppingCart input#cvv{
     margin-top: 0.3em;
     width: 16.3em;
     opacity: 0.5;
+}
+
+section article.shoppingCart input#cvv::-webkit-inner-spin-button, 
+section article.shoppingCart input#cvv::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
 }
 
 section article.shoppingCart input#continue{
@@ -372,7 +384,15 @@ section article.shoppingCart p{
     padding-left: 1.9em;
 }
 
-section article.shoppingCart p#day{
+section article.shoppingCart p#day1{
+    padding-bottom: 1.9em;
+}
+
+section article.shoppingCart p#day2{
+    padding-bottom: 1.9em;
+}
+
+section article.shoppingCart p#day3{
     padding-bottom: 1.9em;
 }
 
@@ -392,38 +412,6 @@ section article.pay div h1{
     font-family: "Trebuchet MS";
     font-size: 1.4em;
     padding-bottom: 0.1em;
-}
-
-section article.pay input#promotionalCode{
-    outline: 0;
-    border: 0.1em solid #072432;
-    color: #072432;
-    font-family: "Trebuchet MS";
-    font-size: 1.2em;
-    background-color: transparent;
-    padding: 0.3em;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    border-radius: 0.5em;
-    width: 13.662em;
-}
-
-section article.pay input#submit{
-    outline: 0;
-    border: 0.1em solid #072432;
-    color: #E8EDF0;
-    font-family: "Trebuchet MS";
-    font-size: 1.2em;
-    background-color: #072432;
-    padding: 0.3em;
-    border-radius: 0.5em;
-    width: 2em;
-}
-
-section article.pay hr{
-    background-color: #072432;
-    height: 0.1em;
-    border: 0;
 }
 
 section article.pay table{

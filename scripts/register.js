@@ -12,9 +12,20 @@ function register(event){
             var user = {"User" : JSON.parse(localStorage.getItem("nameUser")), "Password" : JSON.parse(localStorage.getItem("passwordUser"))};
             sessionStorage.setItem("user" + sessionStorage.length , JSON.stringify(user));
             
-            var fFormulario = document.forms["form"];
-            fFormulario.action = "../index.html";
-            alert("Has sido registrado con éxito!");
+            var sPage = localStorage.getItem("parentPage");
+
+            if (sPage == null){
+                document.getElementById("hrefRegister").setAttribute("href", "../index.html");
+                alert("Has sido registrado con éxito!");
+            } else {
+                if (sPage.substring(sPage.length, sPage.lastIndexOf("/") + 1) == "shoppingcart.html"){
+                    document.getElementById("hrefRegister").setAttribute("href", "pinformation.html");
+                } else {
+                    alert("e");
+                    document.getElementById("hrefRegister").setAttribute("href", "../index.html");
+                    alert("Has sido registrado con éxito!");
+                }
+            }
 
             fFormulario.submit();
     } else {

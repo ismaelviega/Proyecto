@@ -19,7 +19,7 @@ header img{
 header hgroup h6{
     font-family: 'Trebuchet MS';
     font-size: 1.1em;
-    margin-top: 0.6em;
+    margin-top: 0.8em;
     margin-left: 0.5em;
 }
 
@@ -138,27 +138,69 @@ section article div.jerseys img{
     display: block;
 }
 
-section article div.jerseys button.next{
+section article div.jerseys button#nextFirstKit{
     outline: 0;
     background-color: #E8EDF070;
     color: rgb(7, 36, 50);
     border: 0;
     width: 18em;
     padding: 0.3em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
 }
 
-section article div.jerseys button.previous{
+section article div.jerseys button#nextFirstKit:hover{
+    opacity: 1;
+}
+
+section article div.jerseys button#previousFirstKit{
     outline: 0;
     background-color: #E8EDF070;
     color: rgb(7, 36, 50);
     border: 0;
     width: 18em;
     padding: 0.3em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+section article div.jerseys button#previousFirstKit:hover{
+    opacity: 1;
+}
+
+section article div.jerseys button#nextSecondKit{
+    outline: 0;
+    background-color: #E8EDF070;
+    color: rgb(7, 36, 50);
+    border: 0;
+    width: 18em;
+    padding: 0.3em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+section article div.jerseys button#nextSecondKit:hover{
+    opacity: 1;
+}
+
+section article div.jerseys button#previousSecondKit{
+    outline: 0;
+    background-color: #E8EDF070;
+    color: rgb(7, 36, 50);
+    border: 0;
+    width: 18em;
+    padding: 0.3em;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+
+section article div.jerseys button#previousSecondKit:hover{
+    opacity: 1;
 }
 
 section article div.information{
     padding-left: 1.5em;
-    padding-top: 4.5em;
+    padding-top: 4em;
     width: 42em;
     height: 18.5em;
     float: right;
@@ -182,7 +224,7 @@ section article div.information label{
     font-size: 1em;
 }
 
-section article div.information select#size{
+section article div.information select#sizeFirstKit{
     outline: 0;
     border: 0.01em solid #0724322b;
     color: #072432;
@@ -195,33 +237,20 @@ section article div.information select#size{
     margin-bottom: 1em;
 }
 
-section article div.information select#badge{
+section article div.information select#sizeSecondKit{
     outline: 0;
     border: 0.01em solid #0724322b;
     color: #072432;
     font-family: "Trebuchet MS";
     background-color: transparent;
-    margin-left: 8em;
+    margin-left: 9.3em;
     padding-left: 0.5em;
     padding: 0.3em;
     padding-right: 4em;
     margin-bottom: 1em;
 }
 
-section article div.information #name{
-    text-align: center;
-    outline: 0;
-    border: 0.01em solid #0724322b;
-    color: #072432;
-    font-family: "Trebuchet MS";
-    background-color: transparent;
-    margin-left: 2.9em;
-    padding: 0.3em;
-    width: 15em;
-    margin-bottom: 1em;
-}
-
-section article div.information #number{
+section article div.information #numberFirstKit{
     text-align: center;
     outline: 0;
     border: 0.01em solid #0724322b;
@@ -234,13 +263,32 @@ section article div.information #number{
     width: 10em;
 }
 
-section article div.information #number::-webkit-inner-spin-button, 
-section article div.information #number::-webkit-outer-spin-button { 
+section article div.information #numberFirstKit::-webkit-inner-spin-button, 
+section article div.information #numberFirstKit::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+section article div.information #numberSecondKit{
+    text-align: center;
+    outline: 0;
+    border: 0.01em solid #0724322b;
+    color: #072432;
+    font-family: "Trebuchet MS";
+    background-color: transparent;
+    margin-left: 7.2em;
+    padding: 0.3em;
+    margin-bottom: 1em;
+    width: 10em;
+}
+
+section article div.information #numberSecondKit::-webkit-inner-spin-button, 
+section article div.information #numberSecondKit::-webkit-outer-spin-button { 
     -webkit-appearance: none; 
     margin: 0; 
 }
   
-section article div.information button#subtract{
+section article div.information button#subtractFirstKit{
     margin-left: 4.2em;
     outline: 0;
     border: 0;
@@ -249,27 +297,64 @@ section article div.information button#subtract{
     font-size: 1em;
 }
 
-section article div.information #quantity{
+section article div.information button#subtractSecondKit{
+    margin-left: 4.2em;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    color: #072432;
+    font-size: 1em;
+}
+
+section article div.information #quantityFirstKit{
     text-align: center;
     outline: 0;
     border: 0.01em solid #0724322b;
     color: #072432;
     font-family: "Trebuchet MS";
     background-color: transparent;
-    margin-left: 0.4em;
+    margin-left: 0.48em;
     margin-right: 0.5em;
     padding-left: 0.5em;
     padding: 0.3em;
     margin-bottom: 1em;
 }
 
-section article div.information #quantity::-webkit-inner-spin-button, 
-section article div.information #quantity::-webkit-outer-spin-button { 
+section article div.information #quantityFirstKit::-webkit-inner-spin-button, 
+section article div.information #quantityFirstKit::-webkit-outer-spin-button { 
     -webkit-appearance: none; 
     margin: 0; 
 }
 
-section article div.information button#add{
+section article div.information #quantitySecondKit{
+    text-align: center;
+    outline: 0;
+    border: 0.01em solid #0724322b;
+    color: #072432;
+    font-family: "Trebuchet MS";
+    background-color: transparent;
+    margin-left: 0.48em;
+    margin-right: 0.5em;
+    padding-left: 0.5em;
+    padding: 0.3em;
+    margin-bottom: 1em;
+}
+
+section article div.information #quantitySecondKit::-webkit-inner-spin-button, 
+section article div.information #quantitySecondKit::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+section article div.information button#addFirstKit{
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    color: #072432;
+    font-size: 1em;
+}
+
+section article div.information button#addSecondKit{
     outline: 0;
     border: 0;
     background-color: transparent;
@@ -287,8 +372,7 @@ section article div.shoppingCart a{
     text-decoration: none;
 }
 
-
-section article div.shoppingCart a div#addToCart{
+section article div.shoppingCart a div#addToCartFirstKit{
     background-color: rgb(232, 237, 240);
     font-family: "Trebuchet MS";
     text-align: center;
@@ -302,11 +386,11 @@ section article div.shoppingCart a div#addToCart{
     transition: all 0.3s ease-in-out 0s;
 }
 
-section article div.shoppingCart a div#addToCart:hover{
+section article div.shoppingCart a div#addToCartFirstKit:hover{
     opacity: 1;
 }
 
-section article div.shoppingCart a div#buyNow{
+section article div.shoppingCart a div#buyNowFirstKit{
     background-color: rgb(7, 36, 50);
     font-family: "Trebuchet MS";
     text-align: center;
@@ -319,10 +403,44 @@ section article div.shoppingCart a div#buyNow{
     transition: all 0.3s ease-in-out 0s;
 }
 
-section article div.shoppingCart a div#buyNow:hover{
+section article div.shoppingCart a div#buyNowFirstKit:hover{
     opacity: 1;
 }
 
+section article div.shoppingCart a div#addToCartSecondKit{
+    background-color: rgb(232, 237, 240);
+    font-family: "Trebuchet MS";
+    text-align: center;
+    font-size: 1.7em;
+    color: rgb(7, 36, 50);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+section article div.shoppingCart a div#addToCartSecondKit:hover{
+    opacity: 1;
+}
+
+section article div.shoppingCart a div#buyNowSecondKit{
+    background-color: rgb(7, 36, 50);
+    font-family: "Trebuchet MS";
+    text-align: center;
+    font-size: 1.7em;
+    color: rgb(232, 237, 240);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+section article div.shoppingCart a div#buyNowSecondKit:hover{
+    opacity: 1;
+}
 
 aside.sponsor{
     background-color: #E8EDF0;

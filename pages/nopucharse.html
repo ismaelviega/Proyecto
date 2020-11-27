@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/nopucharse.css">
     <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
-    <script src="../scripts/loginRegister.js"></script>
     <title>Changing Room</title>
 </head>
 
 <body>
     <header>
-        <a href="../pages/login.html"><img src="../images/icons/iconuser.png" alt="iconuser.png"></a>
+        <a href="../pages/login.html" id="hrefUser"><img src="../images/icons/iconuser.png" alt="iconuser.png"></a>
         <hgroup>
             <h6><a href="../pages/login.html" id="nameUser"></a></h6>
         </hgroup>
+        <script src="scripts/user.js"></script>
     </header>
 
     <nav>
@@ -28,10 +28,13 @@
             <li><a href="">WINDBREAKER</a></li>
         </ul>
 
-        <div class="shopping">
-            <h4 id="quantity">0</h4>
-            <img src="../images/icons/shoppingcart.png" alt="shoppingCart.png">
-        </div>
+        <a id="href" href="">
+            <div class="shopping">
+                <h4 id="quantity"></h4>
+                <img src="../images/icons/shoppingcart.png" alt="shoppingCart.png">
+            </div>
+            <script src="scripts/cart.js"></script>
+        </a>
     </nav>
 
     <aside class="shipping">
@@ -43,7 +46,10 @@
     <section>
         <img src="../images/icons/shoppingcart.png" alt="shoppingcart.png">
         <p>Your shopping cart is empty</p>
-        <input type="button" value="CONTINUE SHOPPING">
+        <a href="" id="hrefContinue">
+            <input type="submit" id="continue" value="CONTINUE SHOPPING"/> 
+        </a>
+        <script src="scripts/contshop.js"></script>
     </section>
 
     <aside class="sponsor">

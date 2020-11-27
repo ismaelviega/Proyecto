@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-        <a href="../../../pages/login.html"><img src="../../../images/icons/iconuser.png" alt="iconuser.png"></a>
+        <a href="../../../pages/login.html" id="hrefUser"><img src="../../../images/icons/iconuser.png" alt="iconuser.png"></a>
         <hgroup>
             <h6><a href="../../../pages/login.html" id="nameUser"></a></h6>
-            <script src="../../../scripts/loginRegister.js"></script>
         </hgroup>
+        <script src="scripts/jerseys/user.js"></script>
     </header>
 
     <nav>
@@ -28,12 +28,12 @@
 
         <a id="href" href="">
             <div class="shopping">
-                <h4 id="quantity">0</h4>
+                <h4 id="quantity"></h4>
                 <img src="../../../images/icons/shoppingcart.png" alt="shoppingCart.png">
             </div>
         </a>
-
-        <script src="../../../scripts/cart.js"></script>
+        
+        <script src="scripts/jerseys/cart.js"></script>
     </nav>
 
     <aside class="shipping">
@@ -45,19 +45,19 @@
     <section>
         <article>
             <div class="jerseys">
-                
                 <button id="nextFirstKit" onclick="nextPictureFirstKit(-1)">&#9651;</button>
+
                 <img class="firstKit" src="../../../images/teams/athleticclub/jerseys/1.jpg" alt="athletic.jpg">
                 <img class="firstKit" src="../../../images/teams/athleticclub/jerseys/2.jpg" alt="athletic.jpg">
                 
                 <button id="previousFirstKit" onclick="nextPictureFirstKit(1)">&#9661;</button>
-                <script src="../../../scripts/slide/slideFirstKit.js"></script>
+                <script src="scripts/jerseys/slide/slideFirstKit.js"></script>
             </div>
             <div class="shoppingCart">
                 <a href=""><div id="addToCartFirstKit" src="../../../images/teams/athleticclub/jerseys/1.jpg">ADD TO CART</div></a>
-                <script src="../../../scripts/addToCart/addToCartFirstKit.js"></script>
+                <script src="scripts/jerseys/addToCart/addToCartFirstKit.js"></script>
                 <a href="../../shoppingcart.html"><div id="buyNowFirstKit" src="../../../images/teams/athleticclub/jerseys/1.jpg">BUY NOW</div></a>
-                <script src="../../../scripts/buynow/buyNowFirstKit.js"></script>
+                <script src="scripts/jerseys/buynow/buyNowFirstKit.js"></script>
             </div>
             <div class="information">
                 <h3>ATHLETIC CLUB, FIRST EQUIPMENT 20/21</h3>
@@ -79,13 +79,13 @@
                             <option disabled>THE SANTANDER LEAGUE + EUROPE</option>
                         </select><br>
                     <label>NAME / NUMBER</label>
-                        <input type="text" id="nameFirstKit" minlength="0" maxlength="10" placeholder="PLAYER NAME" autocomplete="off">
-                        <input type="number" id="numberFirstKit" min="0" maxlength="10" placeholder="PLAYER NUMBER" autocomplete="off"><br>
+                        <input type="text" id="nameFirstKit" placeholder="PLAYER NAME" autocomplete="off">
+                        <input type="number" id="numberFirstKit" placeholder="PLAYER NUMBER" autocomplete="off"><br>
                     <label>QUANTITY</label>
                         <button id="subtractFirstKit">-</button>
                         <input type="number" id="quantityFirstKit"  value="1" required autocomplete="off" readonly>
                         <button id="addFirstKit">+</button>
-                        <script src="../../../scripts/quantity/quantityFirstKit.js"></script>
+                        <script src="scripts/jerseys/quantity/quantityFirstKit.js"></script>
                 </form>
             </div>
         </article>
@@ -98,13 +98,13 @@
                 <img class="secondKit" src="../../../images/teams/athleticclub/jerseys/4.jpg" alt="athletic.jpg">
                 
                 <button id="previousSecondKit" onclick="nextPictureSecondKit(1)">&#9661;</button>
-                <script src="../../../scripts/slide/slideSecondKit.js"></script>
+                <script src="scripts/jerseys/slide/slideSecondKit.js"></script>
             </div>
             <div class="shoppingCart">
                 <a href=""><div id="addToCartSecondKit" src="../../../images/teams/athleticclub/jerseys/3.jpg">ADD TO CART</div></a>
-                <script src="../../../scripts/addToCart/addToCartSecondKit.js"></script>
-                <a href="../../shoppingcart.html""><div id="buyNowSecondKit" src="../../../images/teams/athleticclub/jerseys/3.jpg">BUY NOW</div></a>
-                <script src="../../../scripts/buynow/buyNowSecondKit.js"></script>
+                <script src="scripts/jerseys/addToCart/addToCartSecondKit.js"></script>
+                <a href="../../shoppingcart.html"><div id="buyNowSecondKit" src="../../../images/teams/athleticclub/jerseys/3.jpg">BUY NOW</div></a>
+                <script src="scripts/jerseys/buynow/buyNowSecondKit.js"></script>
             </div>
             <div class="information">
                 <h3>ATHLETIC CLUB, SECOND EQUIPMENT 20/21</h3>
@@ -126,13 +126,13 @@
                             <option disabled>THE SANTANDER LEAGUE + EUROPE</option>
                         </select><br>
                     <label>NAME / NUMBER</label>
-                        <input type="text" id="nameSecondKit" minlength="0" maxlength="10" placeholder="PLAYER NAME" autocomplete="off">
-                        <input type="number" id="numberSecondKit" min="0" max="99" placeholder="PLAYER NUMBER" autocomplete="off"><br>
+                        <input type="text" id="nameSecondKit" placeholder="PLAYER NAME" autocomplete="off">
+                        <input type="number" id="numberSecondKit" placeholder="PLAYER NUMBER" autocomplete="off"><br>
                     <label>QUANTITY</label>
                         <button id="subtractSecondKit">-</button>
                         <input type="number" id="quantitySecondKit" value="1" required autocomplete="off" readonly>
                         <button id="addSecondKit">+</button>
-                        <script src="../../../scripts/quantity/quantitySecondKit.js"></script>
+                        <script src="scripts/jerseys/quantity/quantitySecondKit.js"></script>
                 </form>
             </div>
         </article>

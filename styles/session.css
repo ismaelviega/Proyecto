@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    text-align: center;
+    background-color: #E8EDF0;
+}
+
+header{
+    background-color: #072432;
+    height: 2.5em;
+    padding-top: 0.6em;
+}
+
+header div{
+    width: 10em;
+    margin: 0 auto;
+}
+
+header div:hover{
+    padding-bottom: 0.2em;
+    border-bottom: 0.001em solid #E8EDF0;
+}
+
+header img{
+    width: 1.2em;
+    margin-left: 0.9em;
+}
+
+header input#signOff{
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS';
+    color: #E8EDF0;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+
+nav{
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+nav img{
+    width: 5em;
+}
+
+nav h1{
+    font-size: 3em;
+    font-family: 'Trebuchet MS';
+    color: #072432;
+}
+
+section article input#oldPassword{
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS';
+    color: #072432;
+    background-color: transparent;
+    outline: 0;
+    border: 0.05em solid #07243293;
+    border-radius: 0.25em;
+    padding: 0.2em;
+    width: 20em;
+}
+
+section article input#newPassword{
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS';
+    color: #072432;
+    background-color: transparent;
+    outline: 0;
+    border: 0.05em solid #07243293;
+    border-radius: 0.25em;
+    padding: 0.2em;
+    width: 20em;
+}
+
+section article input#confirmPassword{
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS';
+    color: #072432;
+    background-color: transparent;
+    outline: 0;
+    border: 0.05em solid #07243293;
+    border-radius: 0.25em;
+    padding: 0.2em;
+    width: 20em;
+}
+
+
+section article input#modifyPassword{
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS';
+    color: #07243293;
+    background-color: transparent;
+    outline: 0;
+    border: 0.05em solid #07243293;
+    border-radius: 0.25em;
+    padding: 0.2em;
+    width: 20.4em;
+    margin-bottom: 5em;
+}
+
+section article input#modifyPassword:hover{
+    color: #E8EDF0;
+    background-color:  #072432;
+}

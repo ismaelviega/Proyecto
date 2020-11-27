@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/session.css">
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+    <title>Changing Room</title>
+</head>
+<body>
+    <header>
+        <div id="logout">
+            <a href="" id="href">
+                <input type="submit" id="signOff" value="SIGN OFF">
+                <img src="../images/icons/offuser.png" alt="offUser.png">
+            </a>
+        </div>
+        <script src="../scripts/logout.js"></script>
+    </header>
+
+    <nav>
+        <img src="../images/icons/iconuserhover.png" alt="iconuser.png">
+        <h1 id="currentUserName"></h1>
+        <script src="../scripts/session.js"></script>
+    </nav>
+
+    <section>
+        <article>
+            <form id="form">
+                <input type="password" id="oldPassword"  placeholder="Old password" autocomplete="off"><br>
+                <input type="password" id="newPassword"  placeholder="New password" autocomplete="off"><br>
+                <input type="password" id="confirmPassword"  placeholder="Confirm password" autocomplete="off"><br>
+                <br><input type="submit" id="modifyPassword" value="MODIFY PASSWORD">
+                <script src="../scripts/modifyPassword.js"></script>
+            </form>
+        </article>
+    </section>
+</body>
+</html>
