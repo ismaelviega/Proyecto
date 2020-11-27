@@ -11,9 +11,9 @@ function buyNow(event){
     iCartQuantity = Number(iCartQuantity) + Number(iQuantity);
     document.getElementById("quantity").innerHTML = iCartQuantity;
 
-    var shortsacsecond = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
+    var shortsrccsecond = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
                         "Name" : "", "Number" : "", "Size" : sSize};
     
-    localStorage.setItem("shortsACSecond", JSON.stringify(shortsacsecond));
+    localStorage.setItem("shortsRCCSecond", JSON.stringify(shortsrccsecond));
     localStorage.setItem("cartQuantity", JSON.stringify(iCartQuantity));
 }

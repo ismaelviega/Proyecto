@@ -13,9 +13,9 @@ function addToCart(event){
     iCartQuantity = Number(iCartQuantity) + Number(iQuantity);
     document.getElementById("quantity").innerHTML = iCartQuantity;
 
-    var shortsacsecond = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
-                          "Name" : "", "Number" : "", "Size" : sSize};
+    var shortsvllcfsecond = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
+                        "Name" : "", "Number" : "", "Size" : sSize};
     
-    localStorage.setItem("shortsACSecond", JSON.stringify(shortsacsecond));
+    localStorage.setItem("shortsVLLCFSecond", JSON.stringify(shortsvllcfsecond));
     localStorage.setItem("cartQuantity", JSON.stringify(iCartQuantity));
 }

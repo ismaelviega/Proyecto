@@ -14,9 +14,9 @@ function addToCart(event){
     iCartQuantity = Number(iCartQuantity) + Number(iQuantity);
     document.getElementById("quantity").innerHTML = iCartQuantity;
 
-    var jerseyacsecond = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
-                         "Name" : sName, "Number" : iNumber, "Size" : sSize};
-    
-    localStorage.setItem("jerseyACSecond", JSON.stringify(jerseyacsecond));
+    var jerseyfcbsecond = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
+    "Name" : sName, "Number" : iNumber, "Size" : sSize};
+
+    localStorage.setItem("jerseyFCBSecond", JSON.stringify(jerseyfcbsecond));
     localStorage.setItem("cartQuantity", JSON.stringify(iCartQuantity));
 }

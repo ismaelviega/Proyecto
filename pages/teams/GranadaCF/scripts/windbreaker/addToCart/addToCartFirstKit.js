@@ -12,9 +12,9 @@ function addToCart(event){
     iCartQuantity = Number(iCartQuantity) + Number(iQuantity);
     document.getElementById("quantity").innerHTML = iCartQuantity;
 
-    var windbreakeracfirst = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
+    var windbreakergrcffirst = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
                             "Name" : "", "Number" : "", "Size" : sSize};
     
-    localStorage.setItem("windbreakerACFirst", JSON.stringify(windbreakeracfirst));
+    localStorage.setItem("windbreakerGrCFFirst", JSON.stringify(windbreakergrcffirst));
     localStorage.setItem("cartQuantity", JSON.stringify(iCartQuantity));
 }

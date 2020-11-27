@@ -12,9 +12,9 @@ function buyNow(event){
     iCartQuantity = Number(iCartQuantity) + Number(iQuantity);
     document.getElementById("quantity").innerHTML = iCartQuantity;
 
-    var jerseyacsecond = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
-                         "Name" : sName, "Number" : iNumber, "Size" : sSize};
-    
-    localStorage.setItem("jerseyACSecond", JSON.stringify(jerseyacsecond));
+    var jerseygcfsecond = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
+    "Name" : sName, "Number" : iNumber, "Size" : sSize};
+
+    localStorage.setItem("jerseyGCFSecond", JSON.stringify(jerseygcfsecond));
     localStorage.setItem("cartQuantity", JSON.stringify(iCartQuantity));
 }

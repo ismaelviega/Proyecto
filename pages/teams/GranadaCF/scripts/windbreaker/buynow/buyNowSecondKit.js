@@ -10,9 +10,9 @@ function buyNow(event){
     iCartQuantity = Number(iCartQuantity) + Number(iQuantity);
     document.getElementById("quantity").innerHTML = iCartQuantity;
 
-    var jerseyacfirst = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
-                        "Name" : "", "Number" : "", "Size" : sSize};
+    var windbreakergrcfsecond = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
+                            "Name" : "", "Number" : "", "Size" : sSize};
     
-    localStorage.setItem("jerseyACSecond", JSON.stringify(jerseyacfirst));
+    localStorage.setItem("windbreakerGrCFSecond", JSON.stringify(windbreakergrcfsecond));
     localStorage.setItem("cartQuantity", JSON.stringify(iCartQuantity));
 }

@@ -14,9 +14,9 @@ function addToCart(event){
     iCartQuantity = Number(iCartQuantity) + Number(iQuantity);
     document.getElementById("quantity").innerHTML = iCartQuantity;
 
-    var jerseyacsecond = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
+    var jerseyrmsecond = {"Image" : sImage, "Price" : sPrice, "Quantity" : iQuantity,
                          "Name" : sName, "Number" : iNumber, "Size" : sSize};
     
-    localStorage.setItem("jerseyACSecond", JSON.stringify(jerseyacsecond));
+    localStorage.setItem("jerseyRMSecond", JSON.stringify(jerseyrmsecond));
     localStorage.setItem("cartQuantity", JSON.stringify(iCartQuantity));
 }
