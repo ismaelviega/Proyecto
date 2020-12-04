@@ -161,6 +161,7 @@ section table{
     margin-top: 2em;
     margin-bottom: 2em;
     border-collapse: collapse;
+    width: 40em;
 }
 
 section table tbody#tableData table tbody tr th{
@@ -168,7 +169,6 @@ section table tbody#tableData table tbody tr th{
     font-family: 'Trebuchet MS';
     font-size: 1.2em;
     text-align: left;
-    width: 40%;
     padding: 0.3em;
 }
 

@@ -372,7 +372,17 @@ section article.shoppingCart input#continue:hover{
     opacity: 1;
 }
 
-section article.shoppingCart input#shipping{
+section article.shoppingCart input#freeShipping{
+    float: left;
+    margin-top: 0.25em;
+}
+
+section article.shoppingCart input#standarShipping{
+    float: left;
+    margin-top: 0.25em;
+}
+
+section article.shoppingCart input#premiumShipping{
     float: left;
     margin-top: 0.25em;
 }
